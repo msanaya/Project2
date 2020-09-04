@@ -10,14 +10,42 @@ This project will be a homework tracker. It will have a create homework/project 
 
 ## API and Data Sample
 
-I will be using AirTable. Once data has been added a snippet will be shown here.
+```
+{
+    "records": [
+        {
+            "id": "recsBCyHRbCkune22",
+            "fields": {
+                "Priority": "High",
+                "Notes": "Look at previous labs in the sandbox for reference.",
+                "Deadline": "2020-09-06",
+                "Language": "ReactJS",
+                "Name": "Audubon Website",
+                "Stage": "InProgress",
+                "Unit": "Two",
+                "Complete": true
+            },
+            "createdTime": "2015-02-10T23:20:30.000Z"
+        },
+         ],
+    "offset": "receaX9SBUuRhCZ6W"
+}
+```
 
 ## Wireframes
 
 <div>
-<img src=https://res.cloudinary.com/dhj9oydvn/image/upload/v1599242696/Trackerista_Desktop_uj4pkf.png width="350">
+<img src=https://res.cloudinary.com/dhj9oydvn/image/upload/v1599247785/Wiframe_Desktop_Create_1_zdsjew.png width="350">
 
-<img src=https://res.cloudinary.com/dhj9oydvn/image/upload/v1599243332/Celllphone_Wireframe_szaehq.png width="250">
+<img src=https://res.cloudinary.com/dhj9oydvn/image/upload/v1599247786/Wireframe_Desktop_Display_kpid7r.png width="350">
+
+</div>
+
+<div>
+
+<img src=https://res.cloudinary.com/dhj9oydvn/image/upload/v1599247786/Wireframe_Mobile_Create_ou470h.png width="250">
+
+<img src=https://res.cloudinary.com/dhj9oydvn/image/upload/v1599247786/Wifreframe_Mobile_Display_gdpgj2.png width="250">
 
 </div>
 
