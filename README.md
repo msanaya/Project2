@@ -38,22 +38,24 @@ This project will be a homework tracker. It will have a create homework/project 
     Desktop
     <img src=https://res.cloudinary.com/dhj9oydvn/image/upload/v1599247785/Wiframe_Desktop_Create_1_zdsjew.png width="350">
 
-    <img src=https://res.cloudinary.com/dhj9oydvn/image/upload/v1599247786/Wireframe_Desktop_Display_kpid7r.png width="350">
+   <img src=https://res.cloudinary.com/dhj9oydvn/image/upload/v1599247786/Wireframe_Desktop_Display_kpid7r.png width="350">
+    
 </div>
 
 <div>
     Tablet
     <img src=https://res.cloudinary.com/dhj9oydvn/image/upload/v1599251602/Wireframe_Tablet_Create_i2bky4.png width="250">
     
-    <img src=https://res.cloudinary.com/dhj9oydvn/image/upload/v1599251603/Wireframe_Tablet_Display_e7o35r.png width="250">
+   <img src=https://res.cloudinary.com/dhj9oydvn/image/upload/v1599251603/Wireframe_Tablet_Display_e7o35r.png width="250">
+    
 </div>
 
 <div>
     Mobile
     <img src=https://res.cloudinary.com/dhj9oydvn/image/upload/v1599247786/Wireframe_Mobile_Create_ou470h.png width="250">
 
-    <img src=https://res.cloudinary.com/dhj9oydvn/image/upload/v1599247786/Wifreframe_Mobile_Display_gdpgj2.png width="250">
-
+   <img src=https://res.cloudinary.com/dhj9oydvn/image/upload/v1599247786/Wifreframe_Mobile_Display_gdpgj2.png width="250">
+    
 </div>
 
 ## MVP/PostMVP
