@@ -14,7 +14,12 @@ I will be using AirTable. Once data has been added a snippet will be shown here.
 
 ## Wireframes
 
-![Desktop Wireframe](https://res.cloudinary.com/dhj9oydvn/image/upload/v1599242696/Trackerista_Desktop_uj4pkf.png)
+<div>
+<img src=https://res.cloudinary.com/dhj9oydvn/image/upload/v1599242696/Trackerista_Desktop_uj4pkf.png width="550">
+
+<img src=https://res.cloudinary.com/dhj9oydvn/image/upload/v1599243332/Celllphone_Wireframe_szaehq.png width="550">
+
+</div>
 
 ## MVP/PostMVP
 
