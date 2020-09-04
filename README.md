@@ -37,6 +37,10 @@ I will be using AirTable. Once data has been added a snippet will be shown here.
 
 ## Component Heirarchy
 
+<div> 
+  <img src=https://res.cloudinary.com/dhj9oydvn/image/upload/v1599244959/Component%20Hierarchy.png >
+  </div>
+
 ## SWOT Analysis
 
 ### Strengths 
