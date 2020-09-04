@@ -14,7 +14,7 @@ I will be using AirTable. Once data has been added a snippet will be shown here.
 
 ## Wireframes
 
-![Desktop Wireframe](https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=Untitled%20Diagram.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1ivHUXZsscP7WF2IHlaGDeGmgiS7PQYS_%26export%3Ddownload)
+![Desktop Wireframe](https://res.cloudinary.com/dhj9oydvn/image/upload/v1599242696/Trackerista_Desktop_uj4pkf.png)
 
 ## MVP/PostMVP
 
