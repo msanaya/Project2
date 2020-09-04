@@ -72,6 +72,20 @@ This project will be a homework tracker. It will have a create homework/project 
 - User will be able to delete homework/project.
 - Add Tableau to site.
 
+## Project Schedule
+
+|  Day | Deliverable | Status
+|---|---| ---|
+|Sep 4| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
+|Sep 4| Project Approval | Complete
+|Sep 6| Basic Template (basic setup and basic CSS) | N/A
+|Sep 7&8| Create | N/A
+|Sep 8| Display | N/A
+|Sep 8&9| Styling | N/A
+|Sep 10| MVP | N/A
+|Sep 10| Post-MVP | N/A
+|Sep 11| Presentations | N/A
+
 ## Component Heirarchy
 
 <div> 
