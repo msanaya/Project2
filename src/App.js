@@ -6,7 +6,7 @@ import Display from "./components/Display";
 import "./App.css";
 
 function App() {
-  // const [setDisplay] = useState([]);
+  const [displays, setDisplays] = useState([]);
   const [fetchList] = useState(false);
 
   // const [display, setDisplay] = useState([]);
@@ -20,8 +20,8 @@ function App() {
           'Authorization': 'Bearer keyXZLrYJDErxjs2J',
         },
       });
-      // setDisplay = response.data.records;
-      console.log(response.data)
+      setDisplays(response.data.records);
+      // console.log(response.data)
     };
     getList();
   }, [fetchList]);
@@ -39,7 +39,13 @@ function App() {
             <h3>This is home.Commit test</h3>
           </Route>
           <Route path="/components/display">
-            <Display />
+            <div className="display-list">
+              {displays.map((display) => (
+                <Display
+                  display={display}
+                />
+              ))}
+            </div>
           </Route>
         </Switch>
       </main>

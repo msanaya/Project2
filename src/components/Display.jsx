@@ -2,9 +2,10 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 
-function Display() {
-  // const [setDisplay] = useState([]);
-  const [fetchList] = useState(false);
+function Display(props) {
+  // const [setDisplay] = props;
+  const [fetchList] = useState([]);
+  const { name, deadline, language, notes, priority, stage, unit } = props.display.fields;
 
   // const [display, setDisplay] = useState([]);
   // const [fetchList, setFetchList] = useState(false);
@@ -17,15 +18,21 @@ function Display() {
           'Authorization': 'Bearer keyXZLrYJDErxjs2J',
         },
       });
-      // setDisplay = response.data.records;
-      console.log(response.data)
+      // setDisplay(response.data.records);
+      console.log(response.data.records)
     };
     getList();
   }, [fetchList]);
 
   return (
-    <div className="App">
-      <h1>This is the display page</h1>
+    <div className="Display">
+      <h2>Name:{name}</h2>
+      <p>Deadline:{deadline}</p>
+      <p>Language:{language}</p>
+      <p>Notes:{notes}</p>
+      <p>Priority:{priority}</p>
+      <p>Stage:{stage}</p>
+      <p>Unit:{unit}</p>
     </div>
   );
 }
