@@ -1,24 +1,48 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { Link, Route, Switch } from 'react-router-dom';
+import Display from "./components/Display";
+// import create from "./components/create";
+import "./App.css";
 
 function App() {
+  // const [setDisplay] = useState([]);
+  const [fetchList] = useState(false);
+
+  // const [display, setDisplay] = useState([]);
+  // const [fetchList, setFetchList] = useState(false);
+
+  useEffect(() => {
+    const getList = async () => {
+      const airtableURL = `https://api.airtable.com/v0/app4zj0QseavgyP30/trackerista`;
+      const response = await axios.get(airtableURL, {
+        headers: {
+          'Authorization': 'Bearer keyXZLrYJDErxjs2J',
+        },
+      });
+      // setDisplay = response.data.records;
+      console.log(response.data)
+    };
+    getList();
+  }, [fetchList]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="/components/display">Display</Link>
+        <Link to="/components/create">Create</Link>
+      </nav>
+      <main>
+        <Switch>
+          <Route exact path="/">
+            <h3>Home!</h3>
+          </Route>
+          <Route path="/components/display">
+            <Display />
+          </Route>
+        </Switch>
+      </main>
     </div>
   );
 }

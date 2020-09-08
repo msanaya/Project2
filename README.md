@@ -1,68 +1,119 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project Overview
 
-## Available Scripts
+## Project Name
 
-In the project directory, you can run:
+Trackerista
 
-### `npm start`
+## Project Description
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This project will be a homework tracker. It will have a create homework/project input, a homework/project update and a homework/project list display.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## API and Data Sample
 
-### `npm test`
+```
+{
+    "records": [
+        {
+            "id": "recsBCyHRbCkune22",
+            "fields": {
+                "priority": "High",
+                "notes": "Look at previous labs in the sandbox for reference.",
+                "deadline": "2020-09-06",
+                "language": "ReactJS",
+                "name": "Audubon Website",
+                "stage": "InProgress",
+                "unit": "Two",
+                "complete": true
+            },
+            "createdTime": "2015-02-10T23:20:30.000Z"
+        },
+         ],
+    "offset": "receaX9SBUuRhCZ6W"
+}
+```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Wireframes
 
-### `npm run build`
+<div>
+    Desktop
+    <img src=https://res.cloudinary.com/dhj9oydvn/image/upload/v1599247785/Wiframe_Desktop_Create_1_zdsjew.png width="350">
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   <img src=https://res.cloudinary.com/dhj9oydvn/image/upload/v1599247786/Wireframe_Desktop_Display_kpid7r.png width="350">
+    
+</div>
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+<div>
+    Tablet
+    <img src=https://res.cloudinary.com/dhj9oydvn/image/upload/v1599251602/Wireframe_Tablet_Create_i2bky4.png width="250">
+    
+   <img src=https://res.cloudinary.com/dhj9oydvn/image/upload/v1599251603/Wireframe_Tablet_Display_e7o35r.png width="250">
+    
+</div>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<div>
+    Mobile
+    <img src=https://res.cloudinary.com/dhj9oydvn/image/upload/v1599247786/Wireframe_Mobile_Create_ou470h.png width="250">
 
-### `npm run eject`
+   <img src=https://res.cloudinary.com/dhj9oydvn/image/upload/v1599247786/Wifreframe_Mobile_Display_gdpgj2.png width="250">
+    
+</div>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## MVP/PostMVP
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### MVP 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Use AirTable API to create, update and display data.
+- User will be able to create homework/project.
+- User will be able to update homework/project.
+- User will be able to display all homeworks/projects created.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### PostMVP  
 
-## Learn More
+- User will be able to delete homework/project.
+- Add Tableau to site.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Project Schedule
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+|  Day | Deliverable | Status
+|---|---| ---|
+|Sep 4| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
+|Sep 4| Project Approval | Complete
+|Sep 6| Basic Template (basic setup and basic CSS) | N/A
+|Sep 7&8| Create | N/A
+|Sep 8| Display | N/A
+|Sep 8&9| Styling | N/A
+|Sep 10| MVP | N/A
+|Sep 10| Post-MVP | N/A
+|Sep 11| Presentations | N/A
 
-### Code Splitting
+## Component Heirarchy
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+<div> 
+  <img src=https://res.cloudinary.com/dhj9oydvn/image/upload/v1599244959/Component%20Hierarchy.png width="550">
+  </div>
 
-### Analyzing the Bundle Size
+## SWOT Analysis
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+### Strengths 
+  - Good with design.
+  - Fast learner.
 
-### Making a Progressive Web App
+### Weaknesses
+  - Can get sidetracked easily.
+  - Self-doubt.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+### Opportunities 
+  - Being able to create a sucessfull app that I will actually use.
+  - Can use the app for the next units.
 
-### Advanced Configuration
+### Threats
+  - Work-life balance
+  
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+## Code Snippet
 
-### Deployment
+Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Change Log
+ Use this section to document what changes were made and the reasoning behind those changes.  
