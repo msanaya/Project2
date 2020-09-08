@@ -36,7 +36,7 @@ function App() {
       <main>
         <Switch>
           <Route exact path="/">
-            <h3>Home!</h3>
+            <h3>This is home.Commit test</h3>
           </Route>
           <Route path="/components/display">
             <Display />
