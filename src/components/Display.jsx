@@ -4,7 +4,7 @@ import axios from "axios";
 
 function Display(props) {
   // const [setDisplay] = props;
-  const [fetchList] = useState([]);
+  const [fetchList, setFetchList] = useState([]);
   const { name, deadline, language, notes, priority, stage, unit } = props.display.fields;
 
   // const [display, setDisplay] = useState([]);
@@ -19,9 +19,9 @@ function Display(props) {
         },
       });
       // setDisplay(response.data.records);
-      console.log(response.data.records)
+      // console.log(response.data.records)
+      setFetchList(!fetchList);
     };
-    getList();
   }, [fetchList]);
 
   return (

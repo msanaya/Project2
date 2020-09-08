@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link, Route, Switch } from 'react-router-dom';
+import Header from "./components/Header";
 import Display from "./components/Display";
 // import create from "./components/create";
 import "./App.css";
@@ -28,6 +29,7 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       <nav>
         <Link to="/">Home</Link>
         <Link to="/components/display">Display</Link>
