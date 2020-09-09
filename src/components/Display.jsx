@@ -3,7 +3,6 @@ import axios from "axios";
 
 
 function Display(props) {
-  // const [setDisplay] = props;
   const [fetchList, setFetchList] = useState([]);
   const { name, deadline, language, notes, priority, stage, unit } = props.display.fields;
 
@@ -18,10 +17,11 @@ function Display(props) {
           'Authorization': 'Bearer keyXZLrYJDErxjs2J',
         },
       });
-      // setDisplay(response.data.records);
+      setFetchList(response.data.records);
       // console.log(response.data.records)
-      setFetchList(!fetchList);
+
     };
+    getList();
   }, [fetchList]);
 
   return (
