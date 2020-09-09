@@ -1,10 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
 .Header {
-  box-sizing: border-box;
-  width: 100%;
   display: flex;
-  justify-content: center;
-  padding: 1em;
-  margin-bottom: 2em;
-  background-color: rgb(192, 45, 26);
-  color: #fff;
+  justify-content: space-between;
+  margin-top: 0 auto;
+  margin-bottom: 0px;
+  background-color: #3a50d9;
+  /* padding-left: 5px; */
+  /* padding-top: 5px; */
+  /* padding-bottom: 1px; */
+  height: 100px;
+} 
+
+/* #big {
+  font: italic bold 140px Rajdhani, Sans-serif;
+  text-shadow: -2px 0 black, 0 2px black, 3px 0 black, 0 -2px black;
+  color: white; */
+  /* position: absolute; */
+  /* z-index: 1; */
+  /* top: 0;
+  left: 0; */
+  /* top: 100; */
+  /* left: 110; */
+
+.small {
+ 
+  background-color: #3a50d9;
+  color: #e0eff2;
+  font: italic bold 100px Rajdhani, Sans-serif;
+  text-shadow: -4px 3px 0 #3a50d9, 29px -18px 0 #0a0e27;
+  text-align: left;
+  margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+  /* position: absolute;
+  z-index: 2;
+  bottom: 15; */
+  /* top: 55; */
+  /* left: 0; */
+
+#navbar {
+  text-align: right;
+  font: 30px Rajdhani, Sans-serif;
+  padding-top: 25px;
+  padding-right: 40px;
+  background-color: #3a50d9;
+}
+
+.links {
+  color: #e0eff2;
+  padding: 12px;
 }

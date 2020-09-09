@@ -30,11 +30,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/components/display">Display</Link>
-        <Link to="/components/create">Create</Link>
-      </nav>
       <main>
         <Switch>
           <Route exact path="/">
