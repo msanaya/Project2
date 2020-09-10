@@ -48,7 +48,6 @@ function App() {
             </div>
           </Route>
           <Route path="/components/createpage">
-
             <Create
               fetchList={fetchList}
               setFetchList={setFetchList}

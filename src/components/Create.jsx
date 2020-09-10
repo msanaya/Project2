@@ -47,7 +47,7 @@ const Create = (props) => {
     <form onSubmit={handleSubmit}>
       <label htmlFor="name">Name:</label>
       <input
-        name="Name"
+        name="name"
         type="text"
         value={name}
         onChange={(event) => setName(event.target.value)}
@@ -59,7 +59,42 @@ const Create = (props) => {
         value={deadline}
         onChange={(event) => setDeadline(event.target.value)}
       />
-      <button type="submit">Create</button>
+      <label htmlFor="language">Language:</label>
+      <input
+        name="language"
+        type="text"
+        value={language}
+        onChange={(event) => setLanguage(event.target.value)}
+      />
+      <label htmlFor="notes">Notes:</label>
+      <input
+        name="notes"
+        type="text"
+        value={notes}
+        onChange={(event) => setNotes(event.target.value)}
+      />
+      <label htmlFor="priority">Priority:</label>
+      <input
+        name="priority"
+        type="text"
+        value={priority}
+        onChange={(event) => setPriority(event.target.value)}
+      />
+      <label htmlFor="stage">Stage:</label>
+      <input
+        name="stage"
+        type="text"
+        value={stage}
+        onChange={(event) => setStage(event.target.value)}
+      />
+      <label htmlFor="unit">Unit:</label>
+      <input
+        name="unit"
+        type="text"
+        value={unit}
+        onChange={(event) => setUnit(event.target.value)}
+      />
+      <button type="submit">Submit</button>
     </form>
   );
 };
