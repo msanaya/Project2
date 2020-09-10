@@ -3,12 +3,12 @@ import axios from "axios";
 import { Route, Switch } from 'react-router-dom';
 import Header from "./components/Header";
 import Display from "./components/Display";
-// import create from "./components/create";
+import CreatePage from "./components/CreatePage";
 import "./styling/App.css";
 
 function App() {
   let [displays, setDisplays] = useState([]);
-  const [fetchList, setFetchList] = useState([]);
+  const [fetchList, setFetchList] = useState(false);
 
   // // const [display, setDisplay] = useState([]);
   // // const [fetchList, setFetchList] = useState(false);
@@ -39,6 +39,7 @@ function App() {
             <div className="display-list">
               {displays.map((display) => (
                 <Display
+                  key={display.id} ///I don't understand why I need the key, what is the function of it.
                   display={display}
                   fetchList={fetchList}
                   setFetchList={setFetchList}
@@ -47,7 +48,11 @@ function App() {
             </div>
           </Route>
           <Route path="/components/createpage">
-            setFetchList={setFetchList}
+            
+            <CreatePage
+              fetchList={fetchList}
+              setFetchList={setFetchList}
+            />
           </Route>
         </Switch>
       </main>

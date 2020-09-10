@@ -10,7 +10,7 @@ function Header() {
       <nav id="navbar">
         <Link className="links" to="/">Home</Link>
         <Link className="links" to="/components/display">Display</Link>
-        <Link className="links" to="/components/create">Create</Link>
+        <Link className="links" to="/components/createPage">Create</Link>
       </nav>
     </div>
   )
