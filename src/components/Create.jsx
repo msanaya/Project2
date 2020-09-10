@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 // import { baseURL } from "../services/constants";
 
-const CreatePage = (props) => {
+const Create = (props) => {
   const [name, setName] = useState("");
   const [deadline, setDeadline] = useState("");
   const [language, setLanguage] = useState("");
@@ -64,4 +64,4 @@ const CreatePage = (props) => {
   );
 };
 
-export default CreatePage;
+export default Create;

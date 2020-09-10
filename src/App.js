@@ -3,7 +3,7 @@ import axios from "axios";
 import { Route, Switch } from 'react-router-dom';
 import Header from "./components/Header";
 import Display from "./components/Display";
-import CreatePage from "./components/CreatePage";
+import Create from "./components/Create";
 import "./styling/App.css";
 
 function App() {
@@ -48,8 +48,8 @@ function App() {
             </div>
           </Route>
           <Route path="/components/createpage">
-            
-            <CreatePage
+
+            <Create
               fetchList={fetchList}
               setFetchList={setFetchList}
             />
