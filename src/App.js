@@ -4,7 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 import Header from "./components/Header";
 import Display from "./components/Display";
 // import create from "./components/create";
-import "./App.css";
+import "./styling/App.css";
 
 function App() {
   let [displays, setDisplays] = useState([]);
@@ -40,9 +40,14 @@ function App() {
               {displays.map((display) => (
                 <Display
                   display={display}
+                  fetchList={fetchList}
+                  setFetchList={setFetchList}
                 />
               ))}
             </div>
+          </Route>
+          <Route path="/components/createpage">
+            setFetchList={setFetchList}
           </Route>
         </Switch>
       </main>

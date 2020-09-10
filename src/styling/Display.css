@@ -1,0 +1,25 @@
+* {
+  border: 1px solid gold;
+}
+
+.display-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: auto; */
+  width: 90%;
+  margin: 0 auto;
+}
+
+.Display {
+  width: 45%;
+  height: 45%;
+  /* align-items: center; */
+  margin: 25px; 
+}
+
+.Attributes {
+  font-weight: 600
+}
+

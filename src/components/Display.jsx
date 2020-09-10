@@ -1,38 +1,35 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import axios from "axios";
+import "../styling/Display.css";
 
 
-function Display(props) {
-  const [fetchList, setFetchList] = useState([]);
+const Display = (props) => {
+  const { fetchList, setFetchList }
+    = props;
   const { name, deadline, language, notes, priority, stage, unit } = props.display.fields;
 
-  // const [display, setDisplay] = useState([]);
-  // const [setFetchList] = useState(false);
 
-  useEffect(() => {
-    const getList = async () => {
-      const airtableURL = `https://api.airtable.com/v0/app4zj0QseavgyP30/trackerista`;
-      const response = await axios.get(airtableURL, {
-        headers: {
-          'Authorization': 'Bearer keyXZLrYJDErxjs2J',
-        },
-      });
-      setFetchList(response.data.records);
-
-
-    };
-    getList();
-  }, [fetchList]);
+  const getList = async () => {
+    const airtableURL = `https://api.airtable.com/v0/app4zj0QseavgyP30/trackerista`;
+    await axios.get(airtableURL, {
+      headers: {
+        'Authorization': 'Bearer keyXZLrYJDErxjs2J',
+      },
+    });
+    setFetchList(!fetchList);
+  }; getList()
 
   return (
     <div className="Display">
-      <h2>Name:{name}</h2>
-      <p>Deadline:{deadline}</p>
-      <p>Language:{language}</p>
-      <p>Notes:{notes}</p>
-      <p>Priority:{priority}</p>
-      <p>Stage:{stage}</p>
-      <p>Unit:{unit}</p>
+      <div className="List">
+        <h2><span className="Attributes">Name:</span>{name}</h2>
+        <p><span className="Attributes">Deadline:</span>{deadline}</p>
+        <p><span className="Attributes">Language:</span>{language}</p>
+        <p><span className="Attributes">Notes:</span>{notes}</p>
+        <p><span className="Attributes">Priority:</span>{priority}</p>
+        <p><span className="Attributes">Stage:</span>{stage}</p>
+        <p><span className="Attributes">Unit:</span>{unit}</p>
+      </div>
     </div>
   );
 }

@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import CreateForm from "./components/CreateForm";
-import Review from "./components/Review";
 // import { baseURL } from "./services/constants";
 
 
-function App() {
+function CreatePage() {
   const [display, setDisplay] = useState([]);
   const [fetchList, setFetchList] = useState(false);
 
@@ -28,11 +27,11 @@ function App() {
         fetchList={fetchList}
         setFetchList={setFetchList}
       />
-      <Display
+      {/* <Display
         display={display}
-      />
+      /> */}
     </div>
   );
 }
 
-export default App;
+export default CreatePage;
