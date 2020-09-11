@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import "../styling/Header.css";
-// import BurgerMenu from "./BurgerMenu";
+import BurgerMenu from "./BurgerMenu";
 
 function Header() {
   return (
@@ -14,7 +14,7 @@ function Header() {
         <Link className="links" to="/components/createPage">Create</Link>
       </nav>
       <div id="burger-menu">
-      {/* <BurgerMenu /> */}
+      <BurgerMenu />
       </div>
       
     </div>

@@ -67,6 +67,10 @@
   overflow: auto;
 }
 
+.button{
+  
+}
+
 .bm-item {
   display: inline-block;
 
@@ -135,4 +139,10 @@
   #navbar {
     display: none;
   }
+
+  #burger-menu {
+    display: block;
+    justify-content: flex-end;
+  }
 }
+

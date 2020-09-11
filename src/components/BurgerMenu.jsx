@@ -14,7 +14,7 @@ function BurgerMenu(props) {
         Display
       </a>
 
-      <a className="menu-item" href="/components/create">
+      <a className="menu-item" href="/components/createPage">
         Create
       </a>
     </Menu>
