@@ -30,6 +30,10 @@ function App() {
         <Switch>
           <Route exact path="/">
             <h3>Welome to Trackerista, where you can keep track of your homework and/or tasks.</h3>
+            <p>First of all, DO NOT freak out. Keep your shite together.</p>
+            <div>
+              <script src="https://www.brainyquote.com/link/quotebr.js"></script>
+              </div>
           </Route>
           <Route path="/components/display">
             <div className="display-list">
