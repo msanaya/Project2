@@ -37,7 +37,8 @@ function App() {
           </Route>
           <Route path="/components/display">
             <div className="display-list">
-              <MapDisplay displays={displays}/>
+              <MapDisplay displays={displays}
+                key={displays.id}/>
             </div>
           </Route>
           <Route path="/components/createpage">
