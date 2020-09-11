@@ -12,3 +12,11 @@ div {
   width:100%;
   text-align: center;
 }
+
+h3 {
+  padding: 10px;
+}
+
+button {
+  margin: 10px;
+}

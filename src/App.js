@@ -29,7 +29,7 @@ function App() {
       <main>
         <Switch>
           <Route exact path="/">
-            <h3>This is home.Commit test</h3>
+            <h3>Welome to Trackerista, where you can keep track of your homework and/or tasks.</h3>
           </Route>
           <Route path="/components/display">
             <div className="display-list">
