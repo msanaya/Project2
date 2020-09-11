@@ -4,8 +4,6 @@ import "../styling/Display.css";
 
 
 const Display = (props) => {
-  const { fetchList, setFetchList }
-    = props;
   const { name, deadline, language, notes, priority, stage, unit } = props.display.fields;
 
   return (

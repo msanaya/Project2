@@ -5,13 +5,11 @@ import Header from "./components/Header";
 import Create from "./components/Create";
 import "./styling/App.css";
 import MapDisplay from "./components/MapDisplay";
+import Footer from "./components/Footer";
 
 function App() {
   let [displays, setDisplays] = useState([]);
   const [fetchList, setFetchList] = useState(false);
-
-  // // const [display, setDisplay] = useState([]);
-  // // const [fetchList, setFetchList] = useState(false);
 
   useEffect(() => {
     const getList = async () => {
@@ -22,11 +20,9 @@ function App() {
         },
       });
       setDisplays(response.data.records);
-      // console.log(response.data)
     };
     getList();
   }, [fetchList]);
-
   return (
     <div className="App">
       <Header />
@@ -37,7 +33,7 @@ function App() {
           </Route>
           <Route path="/components/display">
             <div className="display-list">
-              <MapDisplay />
+              <MapDisplay displays={displays}/>
             </div>
           </Route>
           <Route path="/components/createpage">
@@ -48,8 +44,8 @@ function App() {
           </Route>
         </Switch>
       </main>
+      <Footer />
     </div>
   );
 }
-
 export default App;

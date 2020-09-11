@@ -1,0 +1,13 @@
+.display-component{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: auto; */
+  width: 90%;
+  margin: 0 auto;
+}
+
+.display {
+  width: 45%;
+}

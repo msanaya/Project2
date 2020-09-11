@@ -10,6 +10,8 @@
   /* padding-top: 5px; */
   /* padding-bottom: 1px; */
   height: 100px;
+  position: fixed;
+  top: 0;
 } 
 
 /* #big {

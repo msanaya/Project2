@@ -60,6 +60,7 @@ const Create = (props) => {
        <div>
         <h2>To add a task/homework to the list please fill out the following form. Follow instructions closely.</h2>
       </div>
+      <div className="intake-form">
       <label htmlFor="name">Name:</label>
       <input
         name="name"
@@ -108,7 +109,8 @@ const Create = (props) => {
         type="text"
         value={unit}
         onChange={(event) => setUnit(event.target.value)}
-      />
+        />
+        </div>
       <button type="submit">Submit</button>
     </form>
   );
