@@ -1,5 +1,5 @@
 import React from "react";
-import axios from "axios";
+// import axios from "axios";
 import "../styling/Display.css";
 
 
@@ -7,17 +7,6 @@ const Display = (props) => {
   const { fetchList, setFetchList }
     = props;
   const { name, deadline, language, notes, priority, stage, unit } = props.display.fields;
-
-
-  const getList = async () => {
-    const airtableURL = `https://api.airtable.com/v0/app4zj0QseavgyP30/trackerista`;
-    await axios.get(airtableURL, {
-      headers: {
-        'Authorization': 'Bearer keyXZLrYJDErxjs2J',
-      },
-    });
-    setFetchList(!fetchList);
-  }; getList()
 
   return (
     <div className="Display">

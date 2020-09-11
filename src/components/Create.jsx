@@ -1,6 +1,15 @@
 import React, { useState } from "react";
+// import Select from 'react-select';
 import axios from "axios";
+import "../styling/Create.css";
 // import { baseURL } from "../services/constants";
+
+// const options = [
+//   { value: 'ReactJS', label: 'ReactJS' },
+//   { value: 'Javascript', label: 'Javascript' },
+//   { value: 'CSS', label: 'CSS' },
+//   { value: 'HTML', label: 'HTML' }
+
 
 const Create = (props) => {
   const [name, setName] = useState("");
@@ -10,6 +19,8 @@ const Create = (props) => {
   const [priority, setPriority] = useState("High");
   const [stage, setStage] = useState("");
   const [unit, setUnit] = useState("");
+  
+  
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -21,7 +32,7 @@ const Create = (props) => {
       priority,
       stage,
       unit,
-    };
+    };  
     await axios.post(
       'https://api.airtable.com/v0/app4zj0QseavgyP30/trackerista',
       { fields },
@@ -41,10 +52,14 @@ const Create = (props) => {
     setStage("");
     setUnit("");
   };
+ 
 
   // (label+input)*3 with emmet -- shortcut //
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} >
+       <div>
+        <h2>To add a task/homework to the list please fill out the following form. Follow instructions closely.</h2>
+      </div>
       <label htmlFor="name">Name:</label>
       <input
         name="name"

@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Route, Switch } from 'react-router-dom';
 import Header from "./components/Header";
-import Display from "./components/Display";
 import Create from "./components/Create";
 import "./styling/App.css";
+import MapDisplay from "./components/MapDisplay";
 
 function App() {
   let [displays, setDisplays] = useState([]);
@@ -37,14 +37,7 @@ function App() {
           </Route>
           <Route path="/components/display">
             <div className="display-list">
-              {displays.map((display) => (
-                <Display
-                  key={display.id} ///I don't understand why I need the key, what is the function of it.
-                  display={display}
-                  fetchList={fetchList}
-                  setFetchList={setFetchList}
-                />
-              ))}
+              <MapDisplay />
             </div>
           </Route>
           <Route path="/components/createpage">
