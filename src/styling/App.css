@@ -2,12 +2,13 @@
 
 html {
   font-family: Rajdhani, Sans-serif;
+  color: whitesmoke;
 }
 
 body{        
   padding-top: 130px;
   padding-bottom: 40px;
-  background-color: #ebedfb;
+  background-color: #0c2237;
 }
 
 
@@ -15,4 +16,15 @@ Header {
   position: fixed;
 }
 
+h3 {
+  color: #884866;
+}
+
+h2 {
+  color: #A26B69;
+}
+
+p {
+  color: #F8BB9B;
+}
 
