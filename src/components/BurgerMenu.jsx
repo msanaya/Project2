@@ -5,7 +5,7 @@ function BurgerMenu(props) {
 
   return (
     // Pass on our props
-    <Menu {...props}>
+    <Menu right {...props}>
       <a className="menu-item" href="/">
         Home
       </a>

@@ -26,7 +26,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <main>
+      <main id="page-wrap">
         <Switch>
           <Route exact path="/">
             <h3>Welome to Trackerista, where you can keep track of your homework and/or tasks.</h3>
@@ -36,10 +36,10 @@ function App() {
               </div>
           </Route>
           <Route path="/components/display">
-            <div className="display-list">
+            {/* <div className="display-list"> */}
               <MapDisplay displays={displays}
                 key={displays.id}/>
-            </div>
+            {/* </div> */}
           </Route>
           <Route path="/components/createpage">
             <Create

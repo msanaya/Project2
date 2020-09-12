@@ -57,7 +57,7 @@
 }
 
 #burger-menu {
-  
+  display: none;
 }
 
 #page-wrap {
@@ -67,9 +67,8 @@
   overflow: auto;
 }
 
-.button{
-  
-}
+
+
 
 
 @media (max-width:840px) {
@@ -77,12 +76,10 @@
     display: none;
   }
 
-  /* #burger-menu {
-    width: 40px;
-    height: 40px;
-    margin: 30px;
-    background-color: salmon;
-  } */
+  #burger-menu {
+    display: block;
+    justify-content: flex-end;
+  }
 
   .bm-item {
     display: inline-block;
@@ -103,10 +100,10 @@
   
   /* Position and sizing of burger button */
   .bm-burger-button {
-    position: relative;
+    position: fixed;
     width: 36px;
     height: 30px;
-    left: 36px;
+    right: 36px;
     top: 36px;
   }
   
@@ -147,6 +144,5 @@
   .bm-overlay {
     background: rgba(0, 0, 0, 0.3);
   }
-  
 }
 

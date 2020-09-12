@@ -4,7 +4,7 @@ import "../styling/Display.css";
 
 
 const Display = (props) => {
-  const { name, deadline, language, notes, priority, stage, unit, id } = props.display.fields;
+  const { name, deadline, language, notes, priority, stage, unit } = props.display.fields;
 
   return (
     <div className="Display">
@@ -16,7 +16,6 @@ const Display = (props) => {
         <p><span className="Attributes">Priority:</span>{priority}</p>
         <p><span className="Attributes">Stage:</span>{stage}</p>
         <p><span className="Attributes">Unit:</span>{unit}</p>
-        <p><span className="Attributes">ID:</span>{id}</p>
       </div>
     </div>
   );

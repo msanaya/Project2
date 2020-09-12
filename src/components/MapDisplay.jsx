@@ -8,14 +8,14 @@ function MapDisplay(props) {
   return (
     <div>
       {props.displays.map((display) => (
-        <div className="display-component">
+        // <div className="display-component">
           <Display
             key={display.id} ///I don't understand why I need the key, what is the function of it.
             display={display}
             fetchList={fetchList}
             setFetchList={setFetchList}
           />
-        </div>
+        // </div>
       ))}
     </div>
   )
