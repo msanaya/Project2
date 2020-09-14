@@ -1,14 +1,9 @@
 import React, { useState } from "react";
-// import Select from 'react-select';
 import axios from "axios";
 import "../styling/Create.css";
-// import { baseURL } from "../services/constants";
 
-// const options = [
-//   { value: 'ReactJS', label: 'ReactJS' },
-//   { value: 'Javascript', label: 'Javascript' },
-//   { value: 'CSS', label: 'CSS' },
-//   { value: 'HTML', label: 'HTML' }
+
+
 
 
 const Create = (props) => {
@@ -52,12 +47,10 @@ const Create = (props) => {
     setStage("");
     setUnit("");
   };
- 
 
-  // (label+input)*3 with emmet -- shortcut //
   return (
     <form onSubmit={handleSubmit} >
-       <div>
+      <div>
         <h2>To add a task/homework to the list please fill out the following form. Follow instructions closely.</h2>
       </div>
       <div className="intake-form">

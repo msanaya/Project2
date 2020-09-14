@@ -5,7 +5,6 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  /* align-items: auto; */
   width: 90%;
   margin: 0 auto;
 }
@@ -13,7 +12,6 @@
 .Display {
   width: 45%;
   height: 45%;
-  /* align-items: center; */
   margin: 25px; 
   background-color: #091a2b;
   border-radius: 15px

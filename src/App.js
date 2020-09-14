@@ -36,10 +36,10 @@ function App() {
               </div>
           </Route>
           <Route path="/components/display">
-            {/* <div className="display-list"> */}
-              <MapDisplay displays={displays}
-                key={displays.id}/>
-            {/* </div> */}
+            <MapDisplay
+              displays={displays}
+              key={displays.id}
+            />
           </Route>
           <Route path="/components/createpage">
             <Create

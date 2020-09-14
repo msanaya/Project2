@@ -6,7 +6,6 @@ import BurgerMenu from "./BurgerMenu";
 function Header() {
   return (
     <div className="Header">
-      {/* <div id="big">TRACKERISTA</div> */}
       <h1 className="small">Trackerista</h1>
       <nav id="navbar">
         <Link className="links" to="/">Home</Link>
@@ -15,8 +14,7 @@ function Header() {
       </nav>
       <div id="burger-menu">
       <BurgerMenu />
-      </div>
-      
+      </div>    
     </div>
   )
 }

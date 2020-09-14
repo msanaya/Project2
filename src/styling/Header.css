@@ -7,27 +7,12 @@
   margin-top: 0 auto;
   margin-bottom: 0px;
   background-color: #0E263E;
-  /* padding-left: 5px; */
-  /* padding-top: 5px; */
-  /* padding-bottom: 1px; */
   height: 130px;
   position: fixed;
   top: 0;
 }
 
-/* #big {
-  font: italic bold 140px Rajdhani, Sans-serif;
-  text-shadow: -2px 0 black, 0 2px black, 3px 0 black, 0 -2px black;
-  color: white; */
-  /* position: absolute; */
-  /* z-index: 1; */
-  /* top: 0;
-  left: 0; */
-  /* top: 100; */
-  /* left: 110; */
-
 .small {
-  /* background-color: white; */
   color: whitesmoke;
   font: italic bold 100px Rajdhani, Sans-serif;
   text-shadow: -4px 3px 0 #263b51, 29px -18px 0 #080b1f, 2px 2px 4px #263b51;
@@ -37,11 +22,6 @@
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
-  /* position: absolute;
-  z-index: 2;
-  bottom: 15; */
-  /* top: 55; */
-  /* left: 0; */
 
 #navbar {
   text-align: right;
@@ -61,8 +41,6 @@
 
 #page-wrap {
   text-align: center;
-
-  /* Prevent sidebar from showing a scrollbar on page */
   overflow: auto;
 }
 
@@ -83,7 +61,7 @@
   .bm-item {
     display: inline-block;
   
-    /* Our sidebar item styling */
+    /* Got from react-burger-menu docs - Our sidebar item styling */
     text-decoration: none;
     margin-bottom: 10px;
     color: #d1d1d1;
