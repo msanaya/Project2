@@ -145,3 +145,10 @@
   }
 }
 
+@media (max-width:640px) {
+  .small {
+    font-size: 80px;
+  }
+
+}
+
